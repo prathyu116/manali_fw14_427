@@ -6,34 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <style>
-        #sidebar{
-border: 1px solid black;
-height: 300px;
-width: 40%
-
-        }
-        #search{
-            width: 200px;
-            height: 20px;
-        }
-        #searchbtn{
-            background-color: white;
-            color: black;
-        }
-#news{
-    color: black;
-}
-
-
-    </style>
-    
   </head>
 
   <body>
+    <h1>News Api</h1>
+    <p>To search News</p>
+    <a href="search.html">Click Here</a>
     <div id="container">
       <div id="sidebar">
-  
+
+        <!--DO NOT CHANGE THIS ID's-->
 
 
       </div>
@@ -43,21 +25,21 @@ width: 40%
 
       </div>
     </div>
-    <input id="searchnews">
   </body>
 
 </html>
-<script id="module">
 
-import sidebar from "./components/sidebar.js"
+<script>
+async function getData(){
+  const api="283c828f71925b317339729601a7eee0";
 
-//import { apiCall, appendArticles } from "./scripts/main.js"
+let responce=await fetch("https://gnews.io/api/v4/search?q=example&token=283c828f71925b317339729601a7eee0")
 
-//let responce= apiCall(`https://gnews.io/api/v4/{endpoint}?token=283c828f71925b317339729601a7eee0`)
+let responce=await res.json()
 
-let sidebar= document.getElementById("sidebar");
-sidebar.innerHTML=sidebar();
+let data=responce.articles
 
+console.log(data);
 
-
+}
 </script>

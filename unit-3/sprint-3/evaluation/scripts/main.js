@@ -23,7 +23,21 @@ async function apiCall(url) {
 
 function appendArticles(articles, main) {
 
-    //add append call
+    //add
+    articles.map((articles)=>{
+
+        let img=document.createElement("img");
+        img.src=elem.strMealThumb;
+       
+       let name=document.createElement("p");
+       name.innerText=elem.strMeal;
+       
+       location.append(img,name);
+       
+       
+       
+       
+       })
 
 }
 
