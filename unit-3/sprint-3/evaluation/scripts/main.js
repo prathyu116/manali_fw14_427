@@ -1,6 +1,20 @@
 async function apiCall(url) {
 
+    try{
+    
 
+    
+        let responce= await fetch(url)
+    
+    let data=await responce.json();
+    
+    return data;
+    
+    
+    }catch(error){
+        console.log("error",error);
+    }
+    
     //add api call logic here
 
 
@@ -9,7 +23,7 @@ async function apiCall(url) {
 
 function appendArticles(articles, main) {
 
-    //add append logic here
+    //add append call
 
 }
 

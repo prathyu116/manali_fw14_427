@@ -6,13 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <style>
+        #sidebar{
+border: 1px solid black;
+height: 300px;
+width: 40%
+
+        }
+        #search{
+            width: 200px;
+            height: 20px;
+        }
+        #searchbtn{
+            background-color: white;
+            color: black;
+        }
+#news{
+    color: black;
+}
+
+
+    </style>
+    
   </head>
 
   <body>
     <div id="container">
       <div id="sidebar">
-
-        <!--DO NOT CHANGE THIS ID's-->
+  
 
 
       </div>
@@ -22,6 +43,21 @@
 
       </div>
     </div>
+    <input id="searchnews">
   </body>
 
 </html>
+<script id="module">
+
+import sidebar from "./components/sidebar.js"
+
+//import { apiCall, appendArticles } from "./scripts/main.js"
+
+//let responce= apiCall(`https://gnews.io/api/v4/{endpoint}?token=283c828f71925b317339729601a7eee0`)
+
+let sidebar= document.getElementById("sidebar");
+sidebar.innerHTML=sidebar();
+
+
+
+</script>
