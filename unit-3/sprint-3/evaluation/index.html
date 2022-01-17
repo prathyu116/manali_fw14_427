@@ -15,7 +15,8 @@
     <div id="container">
       <div id="sidebar">
 
-        <!--DO NOT CHANGE THIS ID's-->
+    <h1>Login </h1>
+    <h1>Signup</h1>
 
 
       </div>
@@ -33,13 +34,73 @@
 async function getData(){
   const api="283c828f71925b317339729601a7eee0";
 
-let responce=await fetch("https://gnews.io/api/v4/search?q=example&token=283c828f71925b317339729601a7eee0")
+let res=await fetch("https://gnews.io/api/v4/search?q=example&token=283c828f71925b317339729601a7eee0")
 
 let responce=await res.json()
 
 let data=responce.articles
 
+appendArticles(data);
+
 console.log(data);
 
 }
+
+ getData()
+
+
+function appendArticles(items)
+ {
+ items.forEach(function(items){
+
+ var image=document.createElement("img")
+ image.src=items.image;
+
+ var title=document.createElement("h3")
+ title.textContent=items.description
+
+ let description=document.createElement("p")
+ description.textContent=items.description;
+
+ var contents=document.createElement("p")
+ contents.textContent=items.content;
+
+//let datatosend={
+ //image:items.image,
+
+// title:items.title,
+
+// description=items.description,
+
+// contents:items.content
+
+
+
+// }
+
+let  div=document.createElement("div")
+
+// div.onclick= ()  => {
+
+
+//   showDetails(datatosend)
+// }
+
+div.append(image,title)
+ var con=document.getElementById("container")
+ con.append("div")
+
+
+
+ });
+
+ }
+
+
+// function showDetails(data){
+
+// localStorage.setItem("clicked_news",JSON.stringify(data))
+// windows.location.href="news.html"
+
+// }
 </script>
