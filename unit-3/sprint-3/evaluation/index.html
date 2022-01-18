@@ -1,106 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-
-  <body>
-    <h1>News Api</h1>
-    <p>To search News</p>
-    <a href="search.html">Click Here</a>
-    <div id="container">
-      <div id="sidebar">
-
-    <h1>Login </h1>
-    <h1>Signup</h1>
-
-
-      </div>
-
-      <div id="main">
-        <!--DO NOT CHANGE THIS ID's-->
-
-      </div>
-    </div>
-  </body>
-
-</html>
-
-<script>
-async function getData(){
-  const api="283c828f71925b317339729601a7eee0";
-
-let res=await fetch("https://gnews.io/api/v4/search?q=example&token=8fe27a74581fcfd827baed20dae20c7d")
-
-let responce=await res.json()
-
-let data=responce.articles
-
-appendArticles(data);
-
-console.log(data);
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+  width: 70%;
+  border: 1px solid black;
 }
+#main > div {
+  display: flex;
+  border: 1px solid black;
+  gap: 8%;
+  margin-bottom: 20px;
+}
+#main > div > img {
+  width: 300px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+          <!--DO NOT CHANGE THIS ID's-->
+        </div>
+  
+        <div id="main">
+          <!--DO NOT CHANGE THIS ID's-->
+        </div>
+      </div>
+</body>
+</html>
+<script>
 
- getData()
+async function getdata() {
+    let res = await fetch(
+      `https://gnews.io/api/v4/search?q=example&token=5f14ee9e5828955d43aaacf84a305a8c`
+    );
 
+    let responce = await res.json();
 
-function appendArticles(items)
- {
- items.forEach(function(items){
+    let data = responce.articles;
 
- var image=document.createElement("img")
- image.src=items.image;
+    appenddata(data);
+    console.log(data);
+  }
 
- var title=document.createElement("h3")
- title.textContent=items.description
+  getdata();
 
- let description=document.createElement("p")
- description.textContent=items.description;
+  function appenddata(elem) {
+    elem.forEach((elem) => {
+      let div = document.createElement("div");
 
- var contents=document.createElement("p")
- contents.textContent=items.content;
+      let img = document.createElement("img");
+      img.src = elem.image;
 
-//let datatosend={
- //image:items.image,
+      var name = document.createElement("h3");
+      name.textContent = elem.title;
 
-// title:items.title,
+      let description = document.createElement("p");
+      description.textContent = elem.description;
 
-// description=items.description,
+      let contents = document.createElement("p");
+      contents.textContent = elem.content;
 
-// contents:items.content
+      div.append(img, name, description);
 
-
-
-// }
-
-let  div=document.createElement("div")
-
-// div.onclick= ()  => {
-
-
-//   showDetails(datatosend)
-// }
-
-div.append(image,title)
- var con=document.getElementById("container")
- con.append("div")
+      document.getElementById("main").append(div);
+      div.onclick = () => {
+        window.location.href = "news.html";
+      };
+    });
+  }
 
 
 
- });
 
- }
-
-
-// function showDetails(data){
-
-// localStorage.setItem("clicked_news",JSON.stringify(data))
-// windows.location.href="news.html"
-
-// }
 </script>
