@@ -2,7 +2,7 @@ const express = require("express");
 
 const User = require("../models/user.model");
 
-const crudController = require("./crud.controller");
+const crudController = require("./crudcontroller");
 
 const router = express.Router();
 
@@ -24,7 +24,7 @@ router.get("/:id", async (req, res) => {
     }
   });
   
-  // met + route => patch /users/${variable} and the name of variable is id
+  
   router.patch("/:id", async (req, res) => {
     try {
       const user = await User.findByIdAndUpdate(req.params.id, req.body, {
@@ -39,7 +39,7 @@ router.get("/:id", async (req, res) => {
     }
   });
   
-  // met + route => delete /users/${variable} and the name of variable is id
+  
   router.delete("/:id", async (req, res) => {
     try {
       const user = await User.findByIdAndDelete(req.params.id).lean().exec();
