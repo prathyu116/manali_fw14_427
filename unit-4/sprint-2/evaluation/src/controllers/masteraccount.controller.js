@@ -9,7 +9,7 @@ const router = express.Router();
 router.post("", crudController(User).post);
 
 router.get("", crudController(User).getAll);
-
+1
 router.get("/:id", async (req, res) => {
     try {
       const masteraccount = await masteraccount.findById(req.params.id).lean().exec();
