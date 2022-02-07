@@ -11,8 +11,9 @@ const userSchema = new mongoose.Schema(
       email: [{ type: String, required: true }],
       address: [{ type: String, required: true }],
       gender: [{ type: String, required: false,default:"Female" }],
-      createAt: [{ type: Number, required: true }],
-      updatedAt: [{ type: Number, required: true }],
+      type: [{ type: Number, required: false,default:"costomer" }],
+     
+
     },
     {
       versionKey: false,

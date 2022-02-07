@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 
-const masterAccountSchema = new mongoose.Schema(
+const fixedAccountSchema = new mongoose.Schema(
   {
+    account_number: { type: Number, required: true, unique:true },
     balance: { type: Number, required: true,  },
-    balance: { type: Number, required: true,  },
-    createdAT: { type: String, required: true,  },
-    updatedAt: { type: String, required: true, }
+    intrestRate: { type: Number, required: true,  },
+    StartDate: { type: Number, required: true,  },
+    maturityDate: { type: Number, required: true,  },
+   
   },
   {
     versionKey: false, // removed __v
@@ -13,4 +15,4 @@ const masterAccountSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("masterAccount",masterAccountSchema ); 
+module.exports = mongoose.model("fixedAccountSchema",fixedAccountSchema); 
