@@ -1,0 +1,25 @@
+{
+  "name": "manali_fw14_427",
+  "version": "1.0.0",
+  "description": "Masai School Coding Assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masai-course/manali_fw14_427.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masai-course/manali_fw14_427/issues"
+  },
+  "homepage": "https://github.com/masai-course/manali_fw14_427#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
+  },
+  "devDependencies": {}
+}
