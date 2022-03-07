@@ -1,0 +1,151 @@
+ use assi1
+switched to db assi1
+> db.createCollection("user")
+{ "ok" : 1 }
+> db.user.insert({"id":1,"first_name":"Colman","last_name":"Thorald","email":"cthorald0@ovh.net","gender":"Male","ip_address":"188.253.202.27"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insertMany([{"id":2,"first_name":"Flori","last_name":"Dransfield","email":"fdransfield1@multiply.com","gender":"Genderfluid","ip_address":"65.135.222.104"},])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61fa914d0a0d7e7b42836fe5")
+        ]
+} {"id":3,"first_name":"Aubrie","last_name":"Stodart","email":"astodart2@mozilla.com","gender":"Female","ip_address":"80.125.230.215"}
+uncaught exception: SyntaxError: unexpected token: ':' :mail":"astodart2@mozilla.com","gender":"Female","ip_address":"80.125.230.215"}
+@(shell):1:5
+> db.user.insert({"id":2,"first_name":"Flori","last_name":"Dransfield","email":"fdransfield1@multiply.com","gender":"Genderfluid","ip_address":"65.135.222.104"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":3,"first_name":"Aubrie","last_name":"Stodart","email":"astodart2@mozilla.com","gender":"Female","ip_address":"80.125.230.215"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":4,"first_name":"Gelya","last_name":"Tippetts","email":"gtippetts3@istockphoto.com","gender":"Male","ip_address":"229.204.129.98"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":5,"first_name":"Marci","last_name":"Beadle","email":"mbeadle4@1und1.de","gender":"Male","ip_address":"253.227.115.214"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":6,"first_name":"Wallas","last_name":"Joutapaitis","email":"wjoutapaitis5@vkontakte.ru","gender":"Female","ip_address":"55.51.185.177"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":7,"first_name":"Korrie","last_name":"Maffey","email":"kmaffey6@clickbank.net","gender":"Male","ip_address":"200.182.145.39"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":8,"first_name":"Selene","last_name":"Leving","email":"sleving7@barnesandnoble.com","gender":"Female","ip_address":"55.13.213.150"});
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"id":9,"first_name":"Lorettalorna","last_name":"Eddies","email":"leddies8@paypal.com","gender":"Male","ip_address":"19.4.65.114"});
+WriteResult({ "nInserted" : 1 })
+> db.user.find()
+{ "_id" : ObjectId("61fa91010a0d7e7b42836fe4"), "id" : 1, "first_name" : "Colman", "last_name" : "Thorald", "email" : "cthorald0@ovh.net", "gender" : "Male", "ip_address" : "188.253.202.27" }
+{ "_id" : ObjectId("61fa914d0a0d7e7b42836fe5"), "id" : 2, "first_name" : "Flori", "last_name" : "Dransfield", "email" : "fdransfield1@multiply.com", "gender" : "Genderfluid", "ip_address" : "65.135.222.104" }
+{ "_id" : ObjectId("61fa91cc0a0d7e7b42836fe6"), "id" : 2, "first_name" : "Flori", "last_name" : "Dransfield", "email" : "fdransfield1@multiply.com", "gender" : "Genderfluid", "ip_address" : "65.135.222.104" }
+{ "_id" : ObjectId("61fa92040a0d7e7b42836fe7"), "id" : 3, "first_name" : "Aubrie", "last_name" : "Stodart", "email" : "astodart2@mozilla.com", "gender" : "Female", "ip_address" : "80.125.230.215" }
+{ "_id" : ObjectId("61fa924d0a0d7e7b42836fe8"), "id" : 4, "first_name" : "Gelya", "last_name" : "Tippetts", "email" : "gtippetts3@istockphoto.com", "gender" : "Male", "ip_address" : "229.204.129.98" }
+{ "_id" : ObjectId("61fa928f0a0d7e7b42836fe9"), "id" : 5, "first_name" : "Marci", "last_name" : "Beadle", "email" : "mbeadle4@1und1.de", "gender" : "Male", "ip_address" : "253.227.115.214" }
+{ "_id" : ObjectId("61fa92bc0a0d7e7b42836fea"), "id" : 6, "first_name" : "Wallas", "last_name" : "Joutapaitis", "email" : "wjoutapaitis5@vkontakte.ru", "gender" : "Female", "ip_address" : "55.51.185.177" }
+{ "_id" : ObjectId("61fa92eb0a0d7e7b42836feb"), "id" : 7, "first_name" : "Korrie", "last_name" : "Maffey", "email" : "kmaffey6@clickbank.net", "gender" : "Male", "ip_address" : "200.182.145.39" }
+{ "_id" : ObjectId("61fa93490a0d7e7b42836fec"), "id" : 8, "first_name" : "Selene", "last_name" : "Leving", "email" : "sleving7@barnesandnoble.com", "gender" : "Female", "ip_address" : "55.13.213.150" }
+{ "_id" : ObjectId("61fa93850a0d7e7b42836fed"), "id" : 9, "first_name" : "Lorettalorna", "last_name" : "Eddies", "email" : "leddies8@paypal.com", "gender" : "Male", "ip_address" : "19.4.65.114" }
+> db.user.find.pretty()
+uncaught exception: TypeError: db.user.find.pretty is not a function :
+@(shell):1:1
+> db.user.find().pretty()
+{
+        "_id" : ObjectId("61fa91010a0d7e7b42836fe4"),
+        "id" : 1,
+        "first_name" : "Colman",
+        "last_name" : "Thorald",
+        "email" : "cthorald0@ovh.net",
+        "gender" : "Male",
+        "ip_address" : "188.253.202.27"
+}
+{
+        "_id" : ObjectId("61fa914d0a0d7e7b42836fe5"),
+        "id" : 2,
+        "first_name" : "Flori",
+        "last_name" : "Dransfield",
+        "email" : "fdransfield1@multiply.com",
+        "gender" : "Genderfluid",
+        "ip_address" : "65.135.222.104"
+}
+{
+        "_id" : ObjectId("61fa91cc0a0d7e7b42836fe6"),
+        "id" : 2,
+        "first_name" : "Flori",
+        "last_name" : "Dransfield",
+        "email" : "fdransfield1@multiply.com",
+        "gender" : "Genderfluid",
+        "ip_address" : "65.135.222.104"
+}
+{
+        "_id" : ObjectId("61fa92040a0d7e7b42836fe7"),
+        "id" : 3,
+        "first_name" : "Aubrie",
+        "last_name" : "Stodart",
+        "email" : "astodart2@mozilla.com",
+        "gender" : "Female",
+        "ip_address" : "80.125.230.215"
+}
+{
+        "_id" : ObjectId("61fa924d0a0d7e7b42836fe8"),
+        "id" : 4,
+        "first_name" : "Gelya",
+        "last_name" : "Tippetts",
+        "email" : "gtippetts3@istockphoto.com",
+        "gender" : "Male",
+        "ip_address" : "229.204.129.98"
+}
+{
+        "_id" : ObjectId("61fa928f0a0d7e7b42836fe9"),
+        "id" : 5,
+        "first_name" : "Marci",
+        "last_name" : "Beadle",
+        "email" : "mbeadle4@1und1.de",
+        "gender" : "Male",
+        "ip_address" : "253.227.115.214"
+}
+{
+        "_id" : ObjectId("61fa92bc0a0d7e7b42836fea"),
+        "id" : 6,
+        "first_name" : "Wallas",
+        "last_name" : "Joutapaitis",
+        "email" : "wjoutapaitis5@vkontakte.ru",
+        "gender" : "Female",
+        "ip_address" : "55.51.185.177"
+}
+{
+        "_id" : ObjectId("61fa92eb0a0d7e7b42836feb"),
+        "id" : 7,
+        "first_name" : "Korrie",
+        "last_name" : "Maffey",
+        "email" : "kmaffey6@clickbank.net",
+        "gender" : "Male",
+        "ip_address" : "200.182.145.39"
+}
+{
+        "_id" : ObjectId("61fa93490a0d7e7b42836fec"),
+        "id" : 8,
+        "first_name" : "Selene",
+        "last_name" : "Leving",
+        "email" : "sleving7@barnesandnoble.com",
+        "gender" : "Female",
+        "ip_address" : "55.13.213.150"
+}
+{
+        "_id" : ObjectId("61fa93850a0d7e7b42836fed"),
+        "id" : 9,
+        "first_name" : "Lorettalorna",
+        "last_name" : "Eddies",
+        "email" : "leddies8@paypal.com",
+        "gender" : "Male",
+        "ip_address" : "19.4.65.114"
+}
+> db.user.findOne()
+{
+        "_id" : ObjectId("61fa91010a0d7e7b42836fe4"),
+        "id" : 1,
+        "first_name" : "Colman",
+        "last_name" : "Thorald",
+        "email" : "cthorald0@ovh.net",
+        "gender" : "Male",
+        "ip_address" : "188.253.202.27"
+}
+> db.user.update({first_name:"colman"},{first_name:"manali"});
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> db.user.update({"id":9,"first_name":"Lorettalorna","last_name":"Eddies","email":"leddies8@paypal.com","gender":"Male","ip_address":"19.4.65.114"},{"id":9,"first_name":"manali","last_name":"Eddies","email":"leddies8@paypl.com","gender":"Mal","ip_address":"19.4.65.117"});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+>
