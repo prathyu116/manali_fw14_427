@@ -14,7 +14,7 @@ app.get("/books",  (req, res) => {
       return res.send({ route: "/libraries", role: req.role,Permission:req.responce });
     });
     
-  app.get("/authors",logger,checkPermission("authour"), (req, res) => {
+  app.get("/authors",logger,checkPermission("author"), (req, res) => {
       return res.send({ route: "/authors", role: req.role,Permission:req.responce });
     });
 
@@ -53,3 +53,6 @@ app.listen(5000, () => {
 
 
 
+ 
+
+  
