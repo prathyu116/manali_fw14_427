@@ -1,0 +1,28 @@
+mongo
+
+show dbs
+
+use assignment
+
+db.Day 2.count()
+
+ db.day2.find({"movie_name": "Medora"})
+
+ db.day2.find({movie_name: {$not: {$eq: "Medora"}}})
+
+db.day2.find({$and: [{"budget": {$gt: "$10000"}}, {"budget": {$gte: "$10000"}}]})
+
+ db.day2.find({$and: [{"budget": {$lt: "$10000"}}, {"budget": {$lte: "$10000"}}]})
+
+db.day2.find({$and: [{"budget": {$gt: "$10000"}}, {"production_year": {$gte: "2000"}}]})
+
+db.day2.find({$or: [{"budget": {$gt: "$10000"}}, {"production_year": {$gte: "2000"}}]})
+
+db.day2.find({$and: [{"budget": {$not: {$gt: "$10000"}}}, {"production_year": {$not: {$gt: "2000"}}}]})
+
+db.day2.find({$and: [{"budget": {$not: {$gt: "$10000"}}}, {"production_year": {$not: {$gt: "2000"}}}]})
+
+db.day2.find({$or: [{"budget": {$not: {$eq: "$10000"}}}, {"production_year": {$not: {$eq: "2000"}}}]})
+
+db.day2.find({$and: [{"production_year": {$gte: "2000"}}, {"production_year": {$lte: "2010"}}]})
+
