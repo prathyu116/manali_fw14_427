@@ -1,5 +1,5 @@
 let mongoose = require("mongoose");
 let connect = ()=>{
-    return mongoose.connect("mongodb+srv://Divya-Pidugu:pidugu_123@cluster0.9tbkn.mongodb.net/usermailDatabase?retryWrites=true&w=majority")
+    return mongoose.connect("mongodb+srv://mana:mana_123@cluster0.duupc.mongodb.net/fw1234")
 }
 module.exports = connect;
