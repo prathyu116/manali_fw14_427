@@ -23,8 +23,8 @@ const welcomeMail = async ({ from, to, user }) => {
 	await sendMail({
 		from,
 		to,
-		subject: `Welcome to FreshMenu ${user.name}`,
-		text: `Hi ${user.name}, Welcome to FresMenu`,
+		subject: `Welcome to Gearbest ${user.name}`,
+		text: `Hi ${user.name}, Welcome to Gearbest  hope You enjoy your experience puchasing from us`,
 	});
 };
 
