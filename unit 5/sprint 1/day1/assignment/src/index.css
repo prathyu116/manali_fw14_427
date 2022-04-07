@@ -1,0 +1,24 @@
+
+#Todo_list{
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    margin : 20px ;
+
+}
+#input_value{
+    margin : 20px ;
+    padding: 20px;
+}
+
+#nav{
+    display: flex;
+    border: 1px solid ;
+    height: 90px;
+}
+img{
+    height:90px;
+}
+#btn{
+    padding: 10px 20px;
+}
