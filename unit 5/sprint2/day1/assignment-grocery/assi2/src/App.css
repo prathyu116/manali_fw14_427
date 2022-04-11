@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+button, input{
+  margin:10px ;
+  padding:10px
+}
+.oneTodo{
+  border: 1px solid rgb(23,35,41);
+  margin: 10px 300px;
+  
+}
