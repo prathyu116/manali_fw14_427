@@ -1,0 +1,64 @@
+1)  What are some new things happening in the web?
+  55% of all households globally are forecasted to have voice assistant by the end of 2022. 
+  The latest in web development is voice-activated self-standing devices and voice optimization for regular web sites and apps. 
+  Strengthen with AI, 
+  voice search optimization is beneficial for both end-users and owners
+
+
+2)  Explain a project that you have built?
+Till now I was the part of 3 projects in masai out of which the first project was to make the clone of website fresh menu project it was a 
+team project we were suppose to make that clonwe with in 6 days and we completed that we have used CSS html, Javascriptetc.I made
+ whole payment checkout page . the second website that we make was freshmenu clone wher we used the api to map the things in this 
+ app i made the one special page which was showing the google map authentication of user address. also i have created the payment ,checkout and 
+ thankyou page also.the tools to make this website was javascript,css and mongoDb etc.
+ the next website that i have created individually  the clone of website gearbox there i have used css javascript and mongodb i have 
+ added authentication of usersinformation also password is also incripted i made that project with the span of 5 days only.
+
+
+
+
+3)  Whats something exciting that you have built?
+    the  website that we make was freshmenu clone wher we used the api to map the things in this 
+ app i made the one special page which was showing the google map authentication of user address. also i have created the payment ,checkout and 
+ thankyou page also.the tools to make this website was javascript,css and mongoDb etc.
+ the next website that i have created individually  the clone of website gearbox there i have used css javascript and mongodb i have 
+ added authentication of usersinformation also password is also incripted i made that project with the span of 5 days only.
+
+4)  What are you most excited about?
+I have done the cource of full stack web developer in masai now i am really really excited to start my career in this field to see how things are actually 
+done in this field to start my career. I have lots of hopes to see my bright future.
+
+
+
+
+
+5)  Why do coding standards matter? What are some patterns you follow?
+
+
+
+
+
+
+
+6)  How do you go about managing responsive websites?
+   Make sure all your valuable content is easy to find,
+   while designing any responsive website the first thing i will keep in mind is media@ queries,
+   The backbone of responsive design is the ability to shift and format content depending on the size of the screen. In technical terms, this is known as “the media query.”
+
+   This terminology evolved from the term “media type,” which is a style sheet that determines how a piece of content is 
+   presented on different physical media, such as a screen, paper, or Braille device.
+
+   Media queries work similarly. However, instead of detecting the type of physical media, a media query detects 
+   the size of a screen. The website then decides to render a specific style sheet for that specific screen size.
+   Create A Flexible Foundation
+   Are you familiar with set-width and fluid grids? The biggest difference between the two is the way they calculate the widths of elements on websites.
+
+   A set-width grid calculates the sizes of elements by pixels.
+   A fluid grid calculates the sizes of elements by percentages.
+
+
+
+7)  What do you care about the most when you write software?
+    Write clean, transparent programs, reusable code meansGood code is easily read and understood by others.
+    code should be easy to debug and it should be focused on content.
+
