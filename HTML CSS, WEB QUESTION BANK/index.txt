@@ -23,11 +23,14 @@ It can be HTTP (without SSL) or HTTPS (with SSL).
  
 Host: The host name identifies the host that holds the resource. For example, www.Google.com . A server provides services in the name 
 of the host, but hosts and servers do not have a one-to-one mapping.
-Host names can also be followed by a port number. Well-known port numbers for a service are normally omitted from the URL. Most servers use the well-known port numbers for HTTP and HTTPS , so most HTTP URLs omit the port number.
+Host names can also be followed by a port number. Well-known port numbers for a service are normally omitted from
+ the URL. Most servers use the well-known port numbers for HTTP and HTTPS , so most HTTP URLs omit the port number.
  
-A path: The path identifies the specific resource in the host that the web client wants to access. For example, /software/htp/cics/index.html.
+A path: The path identifies the specific resource in the host that the web client wants to access. For example, 
+/software/htp/cics/index.html.
  
-A query string: This is the last part of a url which gives the url the topic or the query. Like https://www.youtube.com/watch?v=K-j8Y-A2m6E - in this url, the part v=K-j8Y-A2m6E is indicating the query.
+A query string: This is the last part of a url which gives the url the topic or the query. 
+Like https://www.youtube.com/watch?v=K-j8Y-A2m6E - in this url, the part v=K-j8Y-A2m6E is indicating the query.
  
  
 
@@ -53,6 +56,9 @@ What is TCP Protocol?
 Explain all the different HTTP methods?
    The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These methods correspond to
     create, read, update, and delete (or CRUD) operations, respectively.
+
+
+
  
 When a client sends data to the server this is a POST request
 If a client is requesting to get some data this is a GET request.
@@ -70,46 +76,117 @@ HTTP response codes are human-readable text that summarizes the meaning of the s
 3xx => It means further action must be taken in order to complete the request.
 4xx => It means the request contains incorrect syntax or cannot be fulfilled.
 5xx => It means the server failed to fulfill an apparently valid request.
+
+
+
+
  
 What does cache control on http response mean?
 Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses.
 Browser caching is the process by which a web browser saves website resources in order to load them quickly during the next 
-client request. You can see it in action when you load a web page with a background image for example. The first time you load the page, the image gets saved in your browser cache. The next time you visit the page, you will notice that the page loads faster and latency is reduced. This is because the browser is not requesting the image again from the web server. Instead it is loading the image from your local files.
+client request. You can see it in action when you load a web page with a background image for example. The first time
+ you load the page, the image gets saved in your browser cache. The next time you visit the page, you will notice that the page loads faster and latency is reduced. This is because the browser is not requesting the image again from the web server. Instead it is loading the image from your local files.
  
+
+
+
 What is polling?
-Polling is the continuous checking of other programs or devices by one program or device to see what state they are in, usually to see whether they are still connected or want to communicate.
+Polling is the continuous checking of other programs or devices by one program or device to see what state they are in, 
+usually to see whether they are still connected or want to communicate.
 What is long polling?
-Long polling is a strategy in which the server chooses to keep a client's connection open for as long as feasible, only responding when data becomes available or a timeout threshold is reached, rather than having to repeat the procedure for each client until new data becomes available.
+Long polling is a strategy in which the server chooses to keep a client's connection open for as long as 
+feasible, only responding when data becomes available or a timeout threshold is reached, rather than having to repeat the procedure for each client until new data becomes available.
  
+
+
 What are web sockets?
-The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply
+The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session
+ between the user's browser and a server. With this API, you can send messages to a server and receive event-driven 
+ responses without having to poll the server for a reply
+
+
+
  
 How is web sockets different from HTTP?
-Unlike HTTP, where you have to constantly request updates, with websockets, updates are sent immediately when they are available. WebSockets keeps a single, persistent connection open while eliminating latency problems that arise with HTTP request/response-based methods
+Unlike HTTP, where you have to constantly request updates, with websockets, updates are sent 
+immediately when they are available. WebSockets keeps a single, persistent connection open while eliminating
+ latency problems that arise with HTTP request/response-based methods
+
+
+
+
 What is HTTPS?
-Hypertext Transfer Protocol Secure is an extension of the Hypertext Transfer Protocol. It is used for secure communication over a computer network, and is widely used on the Internet. In HTTPS, the communication protocol is encrypted using Transport Layer Security or, formerly, Secure Sockets Layer
+Hypertext Transfer Protocol Secure is an extension of the Hypertext Transfer Protocol. It is used for secure communication over
+ a computer network, and is widely used on the Internet. In HTTPS, the communication protocol is encrypted using Transport 
+ Layer Security or, formerly, Secure Sockets Layer
+
+
+
 What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
-Cross-origin resource sharing (CORS) is a mechanism that allows JavaScript on a web page to make AJAX requests to another domain, different from the domain from which it originated.
+Cross-origin resource sharing (CORS) is a mechanism that allows JavaScript on a web page to make AJAX requests to another
+ domain, different from the domain from which it originated.
+
+
+
 What does the Access-Control-Allow-Origin header do?
-Access-Control-Allow-Origin is a CORS header. CORS, or Cross Origin Resource Sharing, is a mechanism for browsers to let a site running at origin A to request resources from origin B.
+Access-Control-Allow-Origin is a CORS header. CORS, or Cross Origin Resource Sharing, is a mechanism for browsers to let a 
+site running at origin A to request resources from origin B.
+
+
+
 What is clickjacking? How do you fix it?
-Clickjacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking on another. Its other name, user interface (UI) redressing, better describes what is going on
-A better approach to prevent clickjacking attacks is to ask the browser to block any attempt to load your website within an iframe. You can do it by sending the X-Frame-Options HTTP header.
+Clickjacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking 
+on another. Its other name, user interface (UI) redressing, better describes what is going on
+A better approach to prevent clickjacking attacks is to ask the browser to block any attempt to
+ load your website within an iframe. You can do it by sending the X-Frame-Options HTTP header.
+
+
+
 What are some performance metrics for your website?
 Some performance metrics for websites are -> website loading speed, error rate, bounce rate.
+
+
+
 What does the following term mean?
 Time to first byte,
 Page load time
-Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server. This time includes DNS lookup and establishing the connection using a TCP handshake and SSL handshake if the request is made over https
-Definition. Page load time is the time it takes to download and display the entire content of a web page in the browser window (measured in seconds).
+Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the 
+first byte of information from the server. This time includes DNS lookup and establishing the connection using 
+a TCP handshake and SSL handshake if the request is made over https
+Definition. Page load time is the time it takes to download and display the entire content of a web page in the browser 
+window (measured in seconds).
+
+
+
 What do CDN or Content Delivery Networks do? When do you need a CDN?
-A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
-Anybody who has a website or mobile application that's likely to be requested by more than one user at a time can benefit from a CDN.
+A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching 
+content close to where each end user is accessing the internet via a web-enabled device. The content they request is first
+ stored on the origin server and is then replicated and stored elsewhere as needed.
+Anybody who has a website or mobile application that's likely to be requested by more than one user at a
+ time can benefit from a CDN.
+
+
+
 What is the difference between Client Side Renderring and Server Side Renderring?
-Client-side rendering manages the routing dynamically without refreshing the page every time a user requests a different route. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first.
+Client-side rendering manages the routing dynamically without refreshing the page every time a user requests a 
+different route. But server-side rendering is able to display a fully populated page on the first load for any route of
+ the website, whereas client-side rendering displays a blank page first.
+
+
+
 What is Progressive Renderring?
-It is the technique of sequentially rendering parts of the web page on the server-side and send it to the client in portions without waiting for the entire page to be rendered
+It is the technique of sequentially rendering parts of the web page on the server-side and send it to the client in 
+portions without waiting for the entire page to be rendered
+
+
 What is the difference between Preloading and Prefetching resources?
-In preloading it focuses on fetching a resource for the current navigation. prefetch is a low priority resource hint that allows the browser to fetch resources in the background (idle time) that might be needed later, and store them in the browser's cache.
+In preloading it focuses on fetching a resource for the current navigation. prefetch is a
+ low priority resource hint that allows the browser to fetch resources in the background (idle time) that might be needed 
+ later, and store them in the browser's cache.
+
+
+
 What are service workers?
-A service worker is a type of web worker. It's essentially a JavaScript file that runs separately from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, and delivering push messages
+A service worker is a type of web worker. It's essentially a JavaScript file that runs separately 
+from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, 
+and delivering push messages
