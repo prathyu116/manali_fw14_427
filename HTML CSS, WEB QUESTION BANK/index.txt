@@ -1,0 +1,115 @@
+Explain briefly what happens when you hit a url? explain DNS lookup
+   DNS means Domain Name System. Humans access information online through domain names like “Google.com”, “Amazon.in” .
+   Web browsers interact through Internet Protocol(IP) addresses. DNS translates domain names to IP addresses so browsers
+    can load Internet resources.
+    Each device connected to the Internet has a unique IP address which other machines use to find the device.
+     DNS servers eliminate the need for humans to memorize IP addresses
+
+
+
+
+What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of 
+the server The location of the file The arguments to the file
+      URL => Uniform Resource Locator. 
+     A URL locates an existing site on the internet. A URL is used when a web client makes a request to 
+     a server for a resource.
+     A URL has three or four parts.
+Scheme: The scheme identifies the protocol to be used to access the resource on the Internet. 
+It can be HTTP (without SSL) or HTTPS (with SSL).
+ 
+    (SSL stands for Secure Sockets Layer and, in short, it's the standard technology for keeping an internet connection 
+    secure and safeguarding any sensitive data that is being sent between two systems, preventing criminals from reading and
+     modifying any information transferred, including potential personal details.)
+ 
+Host: The host name identifies the host that holds the resource. For example, www.Google.com . A server provides services in the name 
+of the host, but hosts and servers do not have a one-to-one mapping.
+Host names can also be followed by a port number. Well-known port numbers for a service are normally omitted from the URL. Most servers use the well-known port numbers for HTTP and HTTPS , so most HTTP URLs omit the port number.
+ 
+A path: The path identifies the specific resource in the host that the web client wants to access. For example, /software/htp/cics/index.html.
+ 
+A query string: This is the last part of a url which gives the url the topic or the query. Like https://www.youtube.com/watch?v=K-j8Y-A2m6E - in this url, the part v=K-j8Y-A2m6E is indicating the query.
+ 
+ 
+
+
+
+
+What is HTTP protocol?
+  Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
+   It was designed for communication between web browsers and web servers, 
+ 
+
+
+
+What is TCP Protocol?
+   TCP stands for Transmission Control Protocol, a communications standard that enables application programs and computing 
+   devices to exchange messages over a network.
+    The IP address is like the phone number assigned to your smartphone. TCP is all the technology that makes the phone ring, 
+    and that enables you to talk to someone on another phone. They are different from one another, but they are also meaningless without one another.
+ 
+
+
+
+Explain all the different HTTP methods?
+   The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These methods correspond to
+    create, read, update, and delete (or CRUD) operations, respectively.
+ 
+When a client sends data to the server this is a POST request
+If a client is requesting to get some data this is a GET request.
+PUT is a method of modifying a resource where the client sends data that updates the entire resource .
+PATCH is a method of modifying resources where the client sends partial data that is to be updated without modifying the entire data.
+DELETE is a method of deleting data when a client sends DELETE requests.
+ 
+ 
+What are HTTP headers?
+ 
+What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx.
+HTTP response codes are human-readable text that summarizes the meaning of the status code. 
+1xx => It means the request has been received and the process is continuing,
+ 2xx => It means the action was successfully received, understood, and accepted.
+3xx => It means further action must be taken in order to complete the request.
+4xx => It means the request contains incorrect syntax or cannot be fulfilled.
+5xx => It means the server failed to fulfill an apparently valid request.
+ 
+What does cache control on http response mean?
+Cache-control is an HTTP header used to specify browser caching policies in both client requests and server responses.
+Browser caching is the process by which a web browser saves website resources in order to load them quickly during the next 
+client request. You can see it in action when you load a web page with a background image for example. The first time you load the page, the image gets saved in your browser cache. The next time you visit the page, you will notice that the page loads faster and latency is reduced. This is because the browser is not requesting the image again from the web server. Instead it is loading the image from your local files.
+ 
+What is polling?
+Polling is the continuous checking of other programs or devices by one program or device to see what state they are in, usually to see whether they are still connected or want to communicate.
+What is long polling?
+Long polling is a strategy in which the server chooses to keep a client's connection open for as long as feasible, only responding when data becomes available or a timeout threshold is reached, rather than having to repeat the procedure for each client until new data becomes available.
+ 
+What are web sockets?
+The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply
+ 
+How is web sockets different from HTTP?
+Unlike HTTP, where you have to constantly request updates, with websockets, updates are sent immediately when they are available. WebSockets keeps a single, persistent connection open while eliminating latency problems that arise with HTTP request/response-based methods
+What is HTTPS?
+Hypertext Transfer Protocol Secure is an extension of the Hypertext Transfer Protocol. It is used for secure communication over a computer network, and is widely used on the Internet. In HTTPS, the communication protocol is encrypted using Transport Layer Security or, formerly, Secure Sockets Layer
+What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+Cross-origin resource sharing (CORS) is a mechanism that allows JavaScript on a web page to make AJAX requests to another domain, different from the domain from which it originated.
+What does the Access-Control-Allow-Origin header do?
+Access-Control-Allow-Origin is a CORS header. CORS, or Cross Origin Resource Sharing, is a mechanism for browsers to let a site running at origin A to request resources from origin B.
+What is clickjacking? How do you fix it?
+Clickjacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking on another. Its other name, user interface (UI) redressing, better describes what is going on
+A better approach to prevent clickjacking attacks is to ask the browser to block any attempt to load your website within an iframe. You can do it by sending the X-Frame-Options HTTP header.
+What are some performance metrics for your website?
+Some performance metrics for websites are -> website loading speed, error rate, bounce rate.
+What does the following term mean?
+Time to first byte,
+Page load time
+Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server. This time includes DNS lookup and establishing the connection using a TCP handshake and SSL handshake if the request is made over https
+Definition. Page load time is the time it takes to download and display the entire content of a web page in the browser window (measured in seconds).
+What do CDN or Content Delivery Networks do? When do you need a CDN?
+A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
+Anybody who has a website or mobile application that's likely to be requested by more than one user at a time can benefit from a CDN.
+What is the difference between Client Side Renderring and Server Side Renderring?
+Client-side rendering manages the routing dynamically without refreshing the page every time a user requests a different route. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first.
+What is Progressive Renderring?
+It is the technique of sequentially rendering parts of the web page on the server-side and send it to the client in portions without waiting for the entire page to be rendered
+What is the difference between Preloading and Prefetching resources?
+In preloading it focuses on fetching a resource for the current navigation. prefetch is a low priority resource hint that allows the browser to fetch resources in the background (idle time) that might be needed later, and store them in the browser's cache.
+What are service workers?
+A service worker is a type of web worker. It's essentially a JavaScript file that runs separately from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, and delivering push messages
