@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.outer-box{
+  width: 550px;
+  margin: 2% auto;
+}
+
+.box{
+  background: skyblue;
+  color: white;
+  width: 100%;
+  height:170px;
+}
+
+.text-end{
+  text-align: end;
+}
+
+h2, h4{
+  margin: 0;
+  padding: 10px 10px 10px 0px;
+}
+
+.text-addTodo{
+  text-align: center;
+  margin-top: 10px;
+}
+
+input{
+  padding: 7px;
+  width: 250px;
+  height:25px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 18px;
+}
+
+.btn{
+  background-color: rgb(1, 183, 255);
+  cursor: pointer;
+  color: white;
+  outline: none;
+  height:39px;
+  font-size: 18px;
+  border-radius: 5px;
+
+  border: none;
+  width: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+}
+
+input[type=text]:focus{
+  outline: none;
+}
+
+ul > li{
+  background-color: rgb(170, 170, 170);
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.line-through{
+  text-decoration: line-through;
+  color: green;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: dodgerblue;
+}
+
+
+
+.green{
+  color: yellowgreen;
+}
