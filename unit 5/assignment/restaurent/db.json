@@ -1,0 +1,172 @@
+{
+    "addRestaurant": [
+      {
+        "name": "Twiyo",
+        "price": 110,
+        "address": "2 Hintze Park",
+        "img": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
+        "votes": 4.9,
+        "id": 1
+      },
+      {
+        "name": "Aibox",
+        "price": 145,
+        "address": "27 Basil Place",
+        "img": "https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg",
+        "votes": 4.7,
+        "id": 2
+      },
+      {
+        "name": "Tanoodle",
+        "price": 59,
+        "address": "7 Knutson Street",
+        "img": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
+        "votes": 4.5,
+        "id": 3
+      },
+      {
+        "name": "Kamba",
+        "price": 70,
+        "address": "7474 Hoard Road",
+        "img": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
+        "votes": 4.7,
+        "id": 4
+      },
+      {
+        "name": "Photospace",
+        "price": 134,
+        "address": "709 Hallows Street",
+        "img": "https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg",
+        "votes": 4.8,
+        "id": 5
+      },
+      {
+        "name": "Browsetype",
+        "price": 200,
+        "address": "0784 Boyd Pass",
+        "img": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
+        "votes": 4.1,
+        "id": 6
+      },
+      {
+        "name": "Twitterlist",
+        "price": 134,
+        "address": "046 Pankratz Road",
+        "img": "https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg",
+        "votes": 3.6,
+        "id": 7
+      },
+      {
+        "name": "Realpoint",
+        "price": 89,
+        "address": "9776 Stephen Plaza",
+        "img": "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
+        "votes": 3.4,
+        "id": 8
+      },
+      {
+        "name": "Jetpulse",
+        "price": 96,
+        "address": "18 6th Lane",
+        "img": "https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
+        "votes": 4.6,
+        "id": 9
+      },
+      {
+        "name": "Thoughtworks",
+        "price": 99,
+        "address": "6 East Place",
+        "img": "https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
+        "votes": 4.2,
+        "id": 10
+      },
+      {
+        "name": "Gabvine",
+        "price": 110,
+        "address": "93 Pearson Street",
+        "img": "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg",
+        "votes": 4.1,
+        "id": 11
+      },
+      {
+        "name": "Meemm",
+        "price": 134,
+        "address": "90489 Westerfield Trail",
+        "img": "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
+        "votes": 3.9,
+        "id": 12
+      },
+      {
+        "name": "Mydo",
+        "price": 122,
+        "address": "209 Starling Plaza",
+        "img": "https://www.themealdb.com/images/media/meals/xrysxr1483568462.jpg",
+        "votes": 3.7,
+        "id": 13
+      },
+      {
+        "name": "Janyx",
+        "price": 123,
+        "address": "64511 School Road",
+        "img": "https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg",
+        "votes": 4.7,
+        "id": 14
+      },
+      {
+        "name": "Rooxo",
+        "price": 126,
+        "address": "2930 Ludington Park",
+        "img": "https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg",
+        "votes": 4.3,
+        "id": 15
+      },
+      {
+        "name": "Realblab",
+        "price": 130,
+        "address": "56689 Scott Park",
+        "img": "https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg",
+        "votes": 4.5,
+        "id": 16
+      },
+      {
+        "name": "Cogilith",
+        "price": 100,
+        "address": "44 Dawn Circle",
+        "img": "https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg",
+        "votes": 3.2,
+        "id": 17
+      },
+      {
+        "name": "Podcat",
+        "price": 315,
+        "address": "313 Nancy Park",
+        "img": "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
+        "votes": 3,
+        "id": 18
+      },
+      {
+        "name": "Zooxo",
+        "price": 200,
+        "address": "194 Clyde Gallagher Point",
+        "img": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
+        "votes": 3.5,
+        "id": 19
+      },
+      {
+        "name": "Jaxnation",
+        "price": 98,
+        "address": "69820 Lyons Circle",
+        "img": "https://www.themealdb.com/images/media/meals/ssxvup1511387476.jpg",
+        "votes": 4,
+        "id": 20
+      },
+      {
+        "name": "Spicy",
+        "price": "300",
+        "address": "Chinsurah, N.B Road",
+        "img": "https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani.jpg",
+        "votes": "4.8",
+        "id": 21
+      }
+    ]
+  }
