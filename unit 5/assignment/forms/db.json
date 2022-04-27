@@ -1,0 +1,10 @@
+{
+    "profile": [{
+      "username": "manali",
+      "age": "22",
+      "address":"Nagpur",
+      "department":"Engineer",
+      "salary":5000,
+      "marital_status":"single"
+    }]
+  }
