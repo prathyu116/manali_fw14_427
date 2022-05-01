@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    background-color: white(3, 3, 61);
+    border: 1px solid gold;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
+}
