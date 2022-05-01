@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <style>
+    .cont {
+      text-align: center;
+      margin: auto;
+      /* border: 1px solid violet; */
+    }
+    table {
+      margin: auto;
+      margin-top: 50px;
+    }
+    table,
+    th,
+    td {
+      border: 5px solid white;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      background-color: #96d4d4;
+    }
+    .delete {
+      background-color: #96d4d4;
+      border: none;
+    }
+  </style>
+  <body>
+    <div class="cont">
+      <h1>My ToDo's</h1>
+      <div id="inputform">
+        <input id="todo" type="text" placeholder="Add ToDo" />
+
+        <button id="add" value="submit">Submit</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr id="myTable">
+            <th>Task</th>
+            <th>Status</th>
+            <th>Manage</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0-beta.1/redux.min.js"></script>
+  <script>
+    const list = document.getElementById("list");
+    const userInput = document.getElementById("todo");
+
+    const ADD_TODO = "ADD_TODO";
+    const ADD_COUNT = "ADD_COUNT";
+    const DELETE_TODO = "DELETE_TODO";
+
+    const reducer = (state = [], action) => {
+      //console.log(state,action);
+      switch (action.type) {
+        case ADD_TODO:
+          return [...state, action.payload];
+        case DELETE_TODO:
+          return [...state, ...state.getState().filter((e, i) => i !== paload)];
+        default:
+          return state;
+      }
+    };
+    const store = Redux.createStore(reducer);
+
+    store.subscribe(() => {
+      document.querySelector("tbody").innerHTML = "";
+      userInput.value = "";
+
+      store.getState().forEach(function (user, index) {
+        const row = document.createElement("tr");
+        console.log(user);
+        const td1 = document.createElement("td");
+        td1.textContent = user.titel;
+
+        const td2 = document.createElement("td");
+        td2.textContent = user.status;
+
+        td2.addEventListener("click", function () {
+          user.status == false
+            ? (td2.textContent = true)
+            : td2.textContent == true
+            ? (td2.textContent = false)
+            : (td2.textContent = false);
+        });
+        const td3 = document.createElement("button");
+        td3.className = "delete";
+        td3.textContent = "Delete";
+        td3.addEventListener("click", function () {
+          event.target.parentNode.remove();
+        });
+
+        td2.style.cursor = "pointer";
+        td1.style.cursor = "pointer";
+        td3.style.cursor = "pointer";
+        row.append(td1, td2, td3);
+        document.querySelector("tbody").append(row);
+      });
+    });
+
+    document.getElementById("add").addEventListener("click", () => {
+      event.preventDefault();
+      store.dispatch({
+        type: ADD_TODO,
+        payload: { titel: userInput.value, status: false },
+      });
+    });
+  </script>
+</html>
