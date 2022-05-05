@@ -1,0 +1,15 @@
+{
+    "todos": [
+      {
+        "title": "learn redux",
+        "status": false,
+        "id": 1
+      },
+      {
+        "title": "go to kgf",
+        "status": false,
+        "id": 2
+      }
+    ]
+}
+  
